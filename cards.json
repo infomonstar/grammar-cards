@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-16",
+  "series": 1,
+  "topic": "Narration",
+  "cards": [
+    {
+      "id": 1,
+      "topic": "Narration",
+      "subtopic": "Direct to Indirect: Statements",
+      "rule": "When converting a statement from Direct to Indirect Speech, change the reporting verb 'said' to 'said that' or 'told + object'. Remove the inverted commas and shift the tense one step back (backshift).",
+      "example": "Direct: He said, \"I am happy.\"\nIndirect: He said that he was happy.",
+      "practice": "Convert to Indirect Speech: She said, \"I live in Dhaka.\""
+    },
+    {
+      "id": 2,
+      "topic": "Narration",
+      "subtopic": "Direct to Indirect: Questions (Yes/No)",
+      "rule": "For Yes/No questions, use 'asked + whether/if' as the reporting phrase. The question becomes a statement (subject before verb), and the question mark is removed.",
+      "example": "Direct: He said to me, \"Are you tired?\"\nIndirect: He asked me whether/if I was tired.",
+      "practice": "Convert: The teacher said to Rafi, \"Did you do your homework?\""
+    },
+    {
+      "id": 3,
+      "topic": "Narration",
+      "subtopic": "Direct to Indirect: Wh-Questions",
+      "rule": "For Wh-questions, use 'asked + wh-word' to connect the clauses. The question becomes a statement word order (subject + verb), and the question mark is dropped.",
+      "example": "Direct: She said to him, \"Where do you work?\"\nIndirect: She asked him where he worked.",
+      "practice": "Convert: He said to me, \"What time is it?\""
+    },
+    {
+      "id": 4,
+      "topic": "Narration",
+      "subtopic": "Direct to Indirect: Commands",
+      "rule": "Commands use 'told/ordered/requested + object + to + verb'. The imperative verb becomes a to-infinitive. For negative commands, use 'told + not + to + verb'.",
+      "example": "Direct: The teacher said to the student, \"Open your book.\"\nIndirect: The teacher told the student to open his book.",
+      "practice": "Convert: Mother said to me, \"Don't waste your time.\""
+    },
+    {
+      "id": 5,
+      "topic": "Narration",
+      "subtopic": "Direct to Indirect: Exclamations",
+      "rule": "Exclamations and wishes use verbs like 'exclaimed', 'wished', or 'prayed'. The exclamatory sentence changes to a statement, and the exclamation mark is removed.",
+      "example": "Direct: He said, \"What a beautiful scene!\"\nIndirect: He exclaimed that it was a very beautiful scene.",
+      "practice": "Convert: She said, \"How kind you are!\""
+    },
+    {
+      "id": 6,
+      "topic": "Narration",
+      "subtopic": "Pronoun Changes in Indirect Speech",
+      "rule": "In Indirect Speech, pronouns change according to the subject and object of the reporting clause. First person pronouns follow the subject; second person follows the object; third person stays the same.",
+      "example": "Direct: He said, \"I love my country.\"\nIndirect: He said that he loved his country.\n(First person 'I/my' → 'he/his' following reporting subject)",
+      "practice": "Identify the pronoun changes: She said to him, \"I will help you tomorrow.\""
+    },
+    {
+      "id": 7,
+      "topic": "Narration",
+      "subtopic": "Tense Backshift Rules",
+      "rule": "When the reporting verb is in past tense, shift the quoted verb one step back: Present Simple → Past Simple, Present Continuous → Past Continuous, Present Perfect → Past Perfect, Past Simple → Past Perfect.",
+      "example": "Direct: \"I am reading a book.\" (Present Continuous)\nIndirect: He said he was reading a book. (Past Continuous)",
+      "practice": "Apply backshift: She said, \"I have already eaten lunch.\""
+    },
+    {
+      "id": 8,
+      "topic": "Narration",
+      "subtopic": "Time & Place Expressions in Indirect Speech",
+      "rule": "Time and place adverbs shift in Indirect Speech: 'now' → 'then', 'today' → 'that day', 'tomorrow' → 'the next day', 'yesterday' → 'the day before', 'here' → 'there', 'this' → 'that'.",
+      "example": "Direct: He said, \"I will come here tomorrow.\"\nIndirect: He said that he would go there the next day.",
+      "practice": "Convert with correct time/place words: She said, \"I bought this dress yesterday.\""
+    },
+    {
+      "id": 9,
+      "topic": "Narration",
+      "subtopic": "Indirect to Direct Speech",
+      "rule": "To convert Indirect to Direct Speech: restore inverted commas, change 'said that' → 'said', reverse pronoun changes, reverse tense backshift, and restore original time/place words.",
+      "example": "Indirect: He told me that he was going to Dhaka that day.\nDirect: He said to me, \"I am going to Dhaka today.\"",
+      "practice": "Convert to Direct Speech: She asked him if he had finished his work."
+    },
+    {
+      "id": 10,
+      "topic": "Narration",
+      "subtopic": "Narration with Modal Verbs",
+      "rule": "Modal verbs also shift in Indirect Speech: 'will' → 'would', 'can' → 'could', 'may' → 'might', 'shall' → 'should'. 'Must', 'ought to', 'used to', and 'would' usually remain unchanged.",
+      "example": "Direct: She said, \"I will finish this work.\"\nIndirect: She said that she would finish that work.",
+      "practice": "Convert: He said, \"I can solve this problem.\""
+    }
+  ]
+}
