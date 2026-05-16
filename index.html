@@ -6,433 +6,410 @@
 <title>Daily Grammar Cards</title>
 <style>
   :root {
-    --primary: #2563eb;
-    --primary-light: #dbeafe;
-    --accent: #7c3aed;
-    --accent-light: #ede9fe;
-    --success: #059669;
-    --success-light: #d1fae5;
-    --warm: #d97706;
-    --warm-light: #fef3c7;
-    --text: #1e293b;
-    --text-muted: #64748b;
-    --border: #e2e8f0;
-    --bg: #f8fafc;
-    --card-bg: #ffffff;
-    --radius: 16px;
+    --bg: #f2f2f7;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --text-secondary: #3c3c43;
+    --text-muted: #8e8e93;
+    --separator: rgba(60,60,67,0.12);
+    --blue: #007aff;
+    --blue-bg: #f0f6ff;
+    --green: #34c759;
+    --green-bg: #f0fff4;
+    --orange: #ff9500;
+    --orange-bg: #fff8f0;
+    --purple: #af52de;
+    --radius-card: 20px;
+    --radius-inner: 12px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.06), 0 8px 32px rgba(0,0,0,0.04);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
-    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* ── Header ── */
   header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #7c3aed 100%);
-    color: white;
-    padding: 20px 20px 24px;
+    background: rgba(255,255,255,0.82);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--separator);
+    padding: 48px 24px 32px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
-  header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
   }
-  .header-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
-  .site-badge {
+
+  header h1 {
+    font-size: clamp(28px, 6vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text);
+    line-height: 1.1;
+  }
+
+  .header-sub {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--text-muted);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── Content wrapper ── */
+  .content { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  /* ── Meta strip ── */
+  .meta-strip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .topic-tag {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 999px;
-    padding: 4px 14px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-  header h1 {
-    font-size: clamp(22px, 5vw, 32px);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    margin-bottom: 6px;
-  }
-  .header-meta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    font-size: 13px;
-    opacity: 0.85;
-    flex-wrap: wrap;
-    margin-top: 8px;
-  }
-  .header-meta span { display: flex; align-items: center; gap: 4px; }
-
-  /* ── Topic pill ── */
-  .topic-bar {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 14px 20px;
-  }
-  .topic-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(90deg, var(--accent), var(--primary));
+    background: var(--blue);
     color: white;
     font-size: 13px;
-    font-weight: 700;
-    padding: 6px 16px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    padding: 6px 14px;
     border-radius: 999px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  }
+
+  .series-tag {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: white;
+    border: 1px solid var(--separator);
+    padding: 6px 14px;
+    border-radius: 999px;
   }
 
   /* ── Progress ── */
-  .progress-wrap {
-    max-width: 680px;
-    margin: 0 auto 4px;
-    padding: 0 20px;
-  }
-  .progress-header {
+  .progress-block { margin-bottom: 28px; }
+
+  .progress-label {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
-    color: var(--text-muted);
-    margin-bottom: 6px;
+    font-size: 13px;
     font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 8px;
   }
-  .progress-bar {
-    height: 6px;
-    background: var(--border);
+
+  .progress-track {
+    height: 4px;
+    background: var(--separator);
     border-radius: 999px;
     overflow: hidden;
   }
+
   .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
+    background: var(--blue);
     border-radius: 999px;
-    transition: width 0.4s ease;
+    transition: width 0.5s cubic-bezier(.4,0,.2,1);
+  }
+
+  /* ── Syllabus ── */
+  .syllabus-block { margin-bottom: 32px; }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .syllabus-scroll {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .syllabus-scroll::-webkit-scrollbar { display: none; }
+
+  .syllabus-chip {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: white;
+    color: var(--text-muted);
+    border: 1px solid var(--separator);
+    white-space: nowrap;
+  }
+
+  .syllabus-chip.active {
+    background: var(--blue);
+    color: white;
+    border-color: transparent;
+    font-weight: 600;
   }
 
   /* ── Cards ── */
-  main { max-width: 680px; margin: 0 auto; padding: 0 20px 100px; }
-
   .card {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    margin-bottom: 16px;
+    background: var(--card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-1px); }
 
-  .card-header {
-    padding: 14px 18px 12px;
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.09), 0 12px 40px rgba(0,0,0,0.06);
+  }
+
+  .card-top {
+    padding: 20px 22px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border-bottom: 1px solid var(--separator);
+  }
+
+  .card-num {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--blue);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 12px;
-    border-bottom: 1px solid var(--border);
+    justify-content: center;
+    letter-spacing: -0.02em;
+    margin-top: 1px;
   }
-  .card-num {
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
-    font-size: 13px;
-    font-weight: 800;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-  }
+
   .card-subtopic {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 600;
     color: var(--text);
     line-height: 1.3;
+    letter-spacing: -0.02em;
+    padding-top: 4px;
   }
 
-  .card-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 14px; }
+  .card-body { padding: 20px 22px; display: flex; flex-direction: column; gap: 16px; }
 
-  .section-label {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
+  /* ── Blocks inside card ── */
+  .block { border-radius: var(--radius-inner); padding: 16px 18px; }
 
-  .rule-block {
-    background: var(--primary-light);
-    border-left: 3px solid var(--primary);
-    border-radius: 0 8px 8px 0;
-    padding: 12px 14px;
-  }
-  .rule-block .section-label { color: var(--primary); }
-  .rule-block p { font-size: 14px; color: #1e3a8a; line-height: 1.65; }
-
-  .example-block {
-    background: var(--success-light);
-    border-left: 3px solid var(--success);
-    border-radius: 0 8px 8px 0;
-    padding: 12px 14px;
-  }
-  .example-block .section-label { color: var(--success); }
-  .example-block pre {
-    font-family: inherit;
-    font-size: 13.5px;
-    color: #064e3b;
-    white-space: pre-wrap;
-    line-height: 1.7;
-  }
-
-  .practice-block {
-    background: var(--warm-light);
-    border-left: 3px solid var(--warm);
-    border-radius: 0 8px 8px 0;
-    padding: 12px 14px;
-  }
-  .practice-block .section-label { color: var(--warm); }
-  .practice-block p { font-size: 14px; color: #78350f; line-height: 1.65; }
-
-  /* ── Footer ── */
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 12px;
-    color: var(--text-muted);
-    border-top: 1px solid var(--border);
-    margin-top: 8px;
-  }
-
-  /* ── Loading / Error ── */
-  .state-box {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text-muted);
-  }
-  .state-box .icon { font-size: 40px; margin-bottom: 12px; }
-  .state-box h2 { font-size: 18px; color: var(--text); margin-bottom: 6px; }
-  .state-box p { font-size: 14px; }
-
-  /* ── Syllabus ── */
-  .syllabus-wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 0 20px 8px;
-  }
-  .syllabus-title {
+  .block-label {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: var(--text-muted);
     margin-bottom: 8px;
   }
-  .syllabus-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .syllabus-pill {
-    font-size: 11px;
-    font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    color: var(--text-muted);
-    background: white;
-  }
-  .syllabus-pill.active {
-    background: var(--accent-light);
-    border-color: var(--accent);
-    color: var(--accent);
+
+  .block-text {
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
   }
 
+  .block-pre {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.75;
+    letter-spacing: -0.01em;
+    white-space: pre-wrap;
+  }
+
+  .rule { background: var(--blue-bg); }
+  .rule .block-label { color: var(--blue); }
+  .rule .block-text { color: #0a3055; }
+
+  .example { background: var(--green-bg); }
+  .example .block-label { color: #1a7f3c; }
+  .example .block-pre { color: #0d4a25; }
+
+  .practice { background: var(--orange-bg); }
+  .practice .block-label { color: #b06000; }
+  .practice .block-text { color: #5a3000; }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: -0.01em;
+  }
+
+  /* ── States ── */
+  .state-box {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-muted);
+  }
+  .state-icon { font-size: 48px; margin-bottom: 16px; }
+  .state-box h2 { font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 8px; letter-spacing: -0.02em; }
+  .state-box p { font-size: 15px; }
+
   @media (max-width: 480px) {
-    .card-body { padding: 14px; gap: 12px; }
-    .card-header { padding: 12px 14px; }
+    header { padding: 36px 20px 24px; }
+    .card-top { padding: 18px 18px 16px; }
+    .card-body { padding: 16px 18px; }
+    .block { padding: 14px 16px; }
+    .block-text, .block-pre { font-size: 14px; }
+    .card-subtopic { font-size: 16px; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-inner">
-    <div class="site-badge">📚 Grammar Cards</div>
-    <h1>Daily English Grammar</h1>
-    <div class="header-meta">
-      <span id="date-display">Loading...</span>
-      <span>·</span>
-      <span>10 cards / day</span>
-      <span>·</span>
-      <span id="series-display"></span>
-    </div>
-  </div>
+  <div class="eyebrow">English Grammar</div>
+  <h1>Daily Cards</h1>
+  <div class="header-sub" id="date-display">Loading&hellip;</div>
 </header>
 
-<div class="topic-bar">
-  <div class="topic-pill" id="topic-pill">⏳ Loading...</div>
-</div>
+<div class="content">
 
-<div class="syllabus-wrap">
-  <div class="syllabus-title">Syllabus Topics</div>
-  <div class="syllabus-pills" id="syllabus-pills"></div>
-</div>
-
-<div class="progress-wrap">
-  <div class="progress-header">
-    <span>Today's Cards</span>
-    <span id="card-count">0 / 10</span>
+  <div class="meta-strip">
+    <div class="topic-tag" id="topic-tag">&#8203;</div>
+    <div class="series-tag" id="series-tag">&#8203;</div>
   </div>
-  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+
+  <div class="syllabus-block">
+    <div class="section-title">Syllabus</div>
+    <div class="syllabus-scroll" id="syllabus"></div>
+  </div>
+
+  <div class="progress-block">
+    <div class="progress-label">
+      <span>Today's Cards</span>
+      <span id="card-count">0 of 10</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <div id="cards">
+    <div class="state-box">
+      <div class="state-icon">&#8987;</div>
+      <h2>Loading cards&hellip;</h2>
+      <p>Fetching your daily grammar lesson</p>
+    </div>
+  </div>
+
 </div>
 
-<main id="cards-container">
-  <div class="state-box">
-    <div class="icon">⏳</div>
-    <h2>Loading today's cards...</h2>
-    <p>Fetching your daily grammar lesson</p>
-  </div>
-</main>
-
-<footer>
-  Daily Grammar Cards · Free for students · Powered by Cloudflare Pages
-</footer>
+<footer>Daily Grammar Cards &middot; Free for students</footer>
 
 <script>
 const SYLLABUS = [
-  "Narration",
-  "Articles & Prepositions",
-  "Voice Change",
-  "Tenses",
-  "Adverbs",
-  "Clauses",
-  "Sentence Types",
-  "Phrasal Verbs",
-  "Parts of Speech",
-  "Degrees of Comparison",
-  "Sentence Transformation"
+  "Narration","Articles & Prepositions","Voice Change","Tenses",
+  "Adverbs","Clauses","Sentence Types","Phrasal Verbs",
+  "Parts of Speech","Degrees of Comparison","Sentence Transformation"
 ];
 
-const TOPIC_ICONS = {
-  "Narration": "🗣️",
-  "Articles & Prepositions": "📌",
-  "Voice Change": "🔄",
-  "Tenses": "⏰",
-  "Adverbs": "💨",
-  "Clauses": "🔗",
-  "Sentence Types": "📝",
-  "Phrasal Verbs": "🏃",
-  "Parts of Speech": "🔤",
-  "Degrees of Comparison": "📊",
-  "Sentence Transformation": "✂️"
+const ICONS = {
+  "Narration":"🗣️","Articles & Prepositions":"📌","Voice Change":"🔄",
+  "Tenses":"⏰","Adverbs":"💨","Clauses":"🔗","Sentence Types":"📝",
+  "Phrasal Verbs":"🏃","Parts of Speech":"🔤","Degrees of Comparison":"📊",
+  "Sentence Transformation":"✂️"
 };
 
-function formatDate(dateStr) {
-  const d = new Date(dateStr + 'T00:00:00');
-  return d.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+function esc(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function buildSyllabus(activeTopic) {
-  const container = document.getElementById('syllabus-pills');
-  container.innerHTML = '';
-  SYLLABUS.forEach(topic => {
-    const pill = document.createElement('div');
-    pill.className = 'syllabus-pill' + (topic === activeTopic ? ' active' : '');
-    pill.textContent = topic;
-    container.appendChild(pill);
-  });
+function fmtDate(d){
+  return new Date(d+'T00:00:00').toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
 }
 
-function buildCard(card) {
-  const icon = TOPIC_ICONS[card.topic] || '📖';
+function renderSyllabus(active){
+  document.getElementById('syllabus').innerHTML = SYLLABUS.map(t=>
+    `<div class="syllabus-chip${t===active?' active':''}">${esc(t)}</div>`
+  ).join('');
+}
+
+function renderCard(c){
   return `
-    <article class="card">
-      <div class="card-header">
-        <div class="card-num">${card.id}</div>
-        <div class="card-subtopic">${escHtml(card.subtopic)}</div>
+  <article class="card">
+    <div class="card-top">
+      <div class="card-num">${c.id}</div>
+      <div class="card-subtopic">${esc(c.subtopic)}</div>
+    </div>
+    <div class="card-body">
+      <div class="block rule">
+        <div class="block-label">Rule</div>
+        <div class="block-text">${esc(c.rule)}</div>
       </div>
-      <div class="card-body">
-        <div class="rule-block">
-          <div class="section-label">📋 Rule</div>
-          <p>${escHtml(card.rule)}</p>
-        </div>
-        <div class="example-block">
-          <div class="section-label">✅ Example</div>
-          <pre>${escHtml(card.example)}</pre>
-        </div>
-        <div class="practice-block">
-          <div class="section-label">✏️ Practice</div>
-          <p>${escHtml(card.practice)}</p>
-        </div>
+      <div class="block example">
+        <div class="block-label">Example</div>
+        <pre class="block-pre">${esc(c.example)}</pre>
       </div>
-    </article>`;
+      <div class="block practice">
+        <div class="block-label">Practice</div>
+        <div class="block-text">${esc(c.practice)}</div>
+      </div>
+    </div>
+  </article>`;
 }
 
-function escHtml(str) {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-async function loadCards() {
+async function load(){
   try {
-    const res = await fetch('cards.json?v=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
+    const r = await fetch('cards.json?v='+Date.now());
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const d = await r.json();
 
-    // Header meta
-    document.getElementById('date-display').textContent = formatDate(data.date);
-    document.getElementById('series-display').textContent = 'Series #' + (data.series || '?');
+    document.getElementById('date-display').textContent = fmtDate(d.date);
+    document.getElementById('topic-tag').textContent = (ICONS[d.topic]||'📖')+' '+d.topic;
+    document.getElementById('series-tag').textContent = 'Series '+d.series;
 
-    // Topic pill
-    const icon = TOPIC_ICONS[data.topic] || '📖';
-    document.getElementById('topic-pill').textContent = icon + ' Today: ' + data.topic;
+    renderSyllabus(d.topic);
 
-    // Syllabus
-    buildSyllabus(data.topic);
+    const n = d.cards.length;
+    document.getElementById('card-count').textContent = n+' of 10';
+    document.getElementById('progress-fill').style.width = (n*10)+'%';
 
-    // Progress
-    const count = data.cards.length;
-    document.getElementById('card-count').textContent = count + ' / 10';
-    document.getElementById('progress-fill').style.width = (count * 10) + '%';
+    document.getElementById('cards').innerHTML = d.cards.length
+      ? d.cards.map(renderCard).join('')
+      : `<div class="state-box"><div class="state-icon">📭</div><h2>No cards today</h2><p>Check back soon!</p></div>`;
 
-    // Cards
-    const container = document.getElementById('cards-container');
-    if (!data.cards || data.cards.length === 0) {
-      container.innerHTML = `<div class="state-box"><div class="icon">📭</div><h2>No cards today</h2><p>Check back soon!</p></div>`;
-      return;
-    }
-    container.innerHTML = data.cards.map(buildCard).join('');
-
-  } catch (err) {
-    document.getElementById('cards-container').innerHTML = `
-      <div class="state-box">
-        <div class="icon">⚠️</div>
-        <h2>Could not load cards</h2>
-        <p>${escHtml(err.message)}</p>
-      </div>`;
-    console.error(err);
+  } catch(e){
+    document.getElementById('cards').innerHTML =
+      `<div class="state-box"><div class="state-icon">⚠️</div><h2>Could not load cards</h2><p>${esc(e.message)}</p></div>`;
   }
 }
 
-loadCards();
+load();
 </script>
 </body>
 </html>
