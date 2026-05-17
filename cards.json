@@ -7,41 +7,41 @@
       "id": 1,
       "topic": "Articles & Prepositions",
       "subtopic": "Use of 'a' and 'an' before consonant and vowel sound",
-      "rule": "যখন আমরা কোনো বস্তু বা ব্যক্তিকে সাধারণ ভাবে বলি, তখন 'a' বা 'an' ব্যবহার করি। 'a' ব্যবহার করব যখন কনসোন্যান্ট সাউন্ড দিয়ে শুরু হয়। 'an' ব্যবহার করব যখন ভাওয়েল সাউন্ড দিয়ে শুরু হয়।",
-      "example": "A pen, an apple. এখানে 'a' কনসোন্যান্ট সাউন্ড পেন দিয়ে শুরু, 'an' ভাওয়েল সাউন্ড আপল দিয়ে শুরু।",
-      "practice": "নিচের শব্দগুলোর জন্য 'a' বা 'an' ব্যবহার করে বাক্য তৈরি করুন: hour, university, one-eyed, umbrella"
+      "rule": "যখন আমরা কোন বস্তু বা ব্যক্তিকে প্রথম বার উল্লেখ করি তখন 'a' বা 'an' ব্যবহার করি। 'a' ব্যবহার করব যখন কনসোন্যান্ট সাউন্ড থাকে এবং 'an' ব্যবহার করব যখন ভাওয়েল সাউন্ড থাকে।",
+      "example": "A pen is on the table. (একটি কলম টেবিলের উপর আছে।) 'A' হল কনসোন্যান্ট সাউন্ডের জন্য। An apple is red. (একটি আপেল লাল।) 'An' হল ভাওয়েল সাউন্ডের জন্য।",
+      "practice": "নিচের শব্দগুলোর জন্য 'a' বা 'an' ব্যবহার করে বাক্য তৈরি করুন: hour, umbrella, one, university"
     },
     {
       "id": 2,
       "topic": "Articles & Prepositions",
       "subtopic": "Use of 'the' before specific nouns",
-      "rule": "যখন আমরা কোনো বিশেষ বস্তু বা ব্যক্তিকে বলি, তখন 'the' ব্যবহার করি। যে বস্তু বা ব্যক্তি আমাদের জানা হয়।",
-      "example": "The book on the table is mine. এখানে 'the' টেবিলের উপরে বই বুঝায়।",
-      "practice": "নিচের বাক্যগুলোতে 'the' ব্যবহার করুন: teacher, sun, river Ganges, capital of India"
+      "rule": "যখন আমরা কোন বিশেষ বস্তু বা ব্যক্তিকে উল্লেখ করি তখন 'the' ব্যবহার করি। যে বস্তুটি আমাদের জানা হয়েছে বা আগে থেকে বলা হয়েছে সেটির জন্য 'the' ব্যবহার করা হয়।",
+      "example": "The book on the table is mine. (টেবিলের উপরের বইটি আমার।) 'The' ব্যবহার করা হয় বিশেষ বইটির জন্য। The sun rises in the east. (সূর্য পূর্বদিকে উঠে।) 'The' ব্যবহার করা হয় বিশেষ সূর্য ও দিকটির জন্য।",
+      "practice": "নিচের বাক্যগুলোতে 'the' ব্যবহার করুন: (a) ... সাগরে মাছ আছে। (b) ... বাড়িটি সবার কাছাকাছি।"
     },
     {
       "id": 3,
       "topic": "Articles & Prepositions",
       "subtopic": "Use of prepositions of time",
-      "rule": "যখন আমরা কোনো সময়, দিন, মাস বা বছর বুঝাই, তখন প্রিপজিশন ব্যবহার করি। যেমন: on Monday, in July, at 8 o'clock।",
-      "example": "I go to school on Mondays. এখানে 'on' সোমবার বুঝায়।",
-      "practice": "নিচের সময়গুলোতে প্রিপজিশন ব্যবহার করুন: 8 o'clock, Sunday, December, morning"
+      "rule": "সময় সম্পর্কে বলার সময় 'at', 'on', 'in' প্রভৃতি প্রিপজিশন ব্যবহার করা হয়। 'At' ব্যবহার করব সময় বা স্থানের নির্দিষ্ট মাত্রায়, 'on' ব্যবহার করব দিন বা সপ্তাহের নির্দিষ্ট দিনে, 'in' ব্যবহার করব মাস, বছর, সময়ের নির্দিষ্ট অংশে।",
+      "example": "I meet her at 7 o'clock. (আমি 7 টায় তার সাথে দেখা করি।) 'At' সময় নির্দিষ্ট করে ব্যবহার করা হয়। I go to school on Monday. (আমি সোমবার স্কুলে যাই।) 'On' দিন বা সপ্তাহের নির্দিষ্ট দিন বুঝায়। I was born in 1990. (আমি 1990 সালে জন্মানুযায়ী।) 'In' বছর বুঝায়।",
+      "practice": "নিচের সময়গুলোতে 'at', 'on', 'in' ব্যবহার করুন: (a) 10 টায় (b) শনিবারে (c) জুন মাসে"
     },
     {
       "id": 4,
       "topic": "Articles & Prepositions",
       "subtopic": "Use of prepositions of place",
-      "rule": "যখন আমরা কোনো স্থান বা অবস্থান বুঝাই, তখন প্রিপজিশন ব্যবহার করি। যেমন: in the room, on the table, at the station।",
-      "example": "The keys are on the table. এখানে 'on' টেবিলের উপর বুঝায়।",
-      "practice": "নিচের স্থানগুলোতে প্রিপজিশন ব্যবহার করুন: chair, wall, door, table"
+      "rule": "স্থান বা অবস্থান বুঝানোর জন্য 'in', 'on', 'at' প্রভৃতি প্রিপজিশন ব্যবহার করা হয়। 'In' ব্যবহার করব যখন কোন স্থানের মধ্যে থাকে, 'on' ব্যবহার করব যখন কোন স্থানের উপর থাকে, 'at' ব্যবহার করব যখন কোন স্থানের নির্দিষ্ট বিন্দুতে থাকে।",
+      "example": "The book is on the table. (বইটি টেবিলের উপর আছে।) 'On' স্থানের উপর বুঝায়। The cat is in the box. (বিড়ালটি বাক্সের মধ্যে আছে।) 'In' স্থানের মধ্যে বুঝায়। She is at the door. (তিনি দরজায় আছেন।) 'At' স্থানের নির্দিষ্ট বিন্দুতে বুঝায়।",
+      "practice": "নিচের স্থানগুলোতে 'in', 'on', 'at' ব্যবহার করুন: (a) টেবিলের উপর (b) বাড়িতে (c) দরজায়"
     },
     {
       "id": 5,
       "topic": "Articles & Prepositions",
-      "subtopic": "Use of zero article before uncountable and plural nouns",
-      "rule": "যখন আমরা অপরিমেয় বা বহুবচন সত্ত্বার বস্তু বা ব্যক্তিকে বলি, তখন 'a' বা 'an' ব্যবহার করি না। যেমন: I like milk, They go to school।",
-      "example": "Milk is good for health. এখানে 'milk' অপরিমেয় সত্ত্বা, কোনো আর্টিকেল ব্যবহার করা হয় নি।",
-      "practice": "নিচের শব্দগুলোতে আর্টিকেল ব্যবহার করুন: tea, books, water, apples"
+      "subtopic": "Zero article with uncountable and plural nouns",
+      "rule": "অযৌগিক বা বহুবচন সম্পন্ন কিছু শব্দের ক্ষেত্রে আমরা 'a', 'an', 'the' ব্যবহার করি না। এটি শূন্য আর্টিকেল বলে।",
+      "example": "I like milk. (আমি দুধ পছন্দ করি।) অযৌগিক শব্দের ক্ষেত্রে 'a' বা 'the' ব্যবহার করা হয় না। I have two brothers. (আমার দুটি ভাই আছে।) বহুবচন শব্দের ক্ষেত্রে আর্টিকেল ব্যবহার করা হয় না।",
+      "practice": "নিচের বাক্যগুলোতে শূন্য আর্টিকেল ব্যবহার করুন: (a) আমি কিছু পানীয় খাই (b) আমি কিছু বই পড়ি"
     }
   ]
 }
