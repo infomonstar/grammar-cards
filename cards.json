@@ -6,82 +6,42 @@
     {
       "id": 1,
       "topic": "Articles & Prepositions",
-      "subtopic": "Definite Article 'the'",
-      "rule": "Use 'the' before specific nouns that are unique or already mentioned.",
-      "example": "The sun rises in the east.",
-      "practice": "Identify and rewrite sentences using 'the' where appropriate."
+      "subtopic": "Use of 'a' and 'an'",
+      "rule": "যখন কোনো বিশেষ বস্তু বা ব্যক্তি সম্পর্কে কথা বলা হয় তখন 'a' বা 'an' ব্যবহার করা হয়। 'a' হবে যখন বাক্যে প্রথম শব্দটি ব্যাপ্ত বর্ণ দিয়ে শুরু হয় আর 'an' হবে যখন বাক্যে প্রথম শব্দটি স্বর দিয়ে শুরু হয়।",
+      "example": "A pen is on the table. (একটি কলম টেবিলের উপর আছে। এখানে 'a' ব্যবহার করা হয়েছে কারণ 'pen' শব্দটি ব্যাপ্ত বর্ণ দিয়ে শুরু হয়।)\nAn apple is healthy. (একটি আপেল স্বাস্থ্যকর। এখানে 'an' ব্যবহার করা হয়েছে কারণ 'apple' শব্দটি স্বর দিয়ে শুরু হয়।)",
+      "practice": "নিচের শব্দগুলোর জন্য ঠিক করে 'a' বা 'an' ব্যবহার করুন: আপেল, কলম, ইঞ্জিনিয়ার, উপাদান।"
     },
     {
       "id": 2,
       "topic": "Articles & Prepositions",
-      "subtopic": "Indefinite Articles 'a' and 'an'",
-      "rule": "Use 'a' before consonant sounds and 'an' before vowel sounds.",
-      "example": "She is a teacher. He is an engineer.",
-      "practice": "Rewrite the following words with the correct article: hour, university, umbrella, European."
+      "subtopic": "Zero Article",
+      "rule": "যখন কোনো বিশেষ বস্তু নয় বা সাধারণ বস্তু সম্পর্কে কথা বলা হয় তখন 'a' বা 'an' ব্যবহার করা হয় না। এটি সাধারণত সমাচ্ছাদক বা সাধারণ বিষয়গুলোতে ব্যবহার করা হয়।",
+      "example": "I like tea. (আমি চা পছন্দ করি। এখানে 'a' ব্যবহার করা হয়নি কারণ চা একটি সাধারণ বিষয়।)\nShe is a teacher. (তিনি একজন শিক্ষিকা। এখানে 'a' ব্যবহার করা হয়েছে কারণ এটি বিশেষ ব্যক্তি নয়।)",
+      "practice": "নিচের বাক্যগুলোতে 'a' বা 'an' ব্যবহার করুন না: আমি চা পছন্দ করি, তিনি একজন শিক্ষক, সে একটি কলম কিনেছে।"
     },
     {
       "id": 3,
       "topic": "Articles & Prepositions",
-      "subtopic": "Zero Article",
-      "rule": "Use no article before uncountable or plural nouns when referring to general ideas.",
-      "example": "People need water to survive.",
-      "practice": "Choose the correct article: ___ water is essential for life."
+      "subtopic": "Prepositions of Time",
+      "rule": "যখন কোনো সময় বা সময়ের প্রতি কথা বলা হয় তখন 'at', 'on', 'in' এগুলো ব্যবহার করা হয়। 'at' হবে সময় বা ঘটনার জন্য, 'on' হবে দিন বা মাসের জন্য, 'in' হবে মাস, বছর বা সময়ের জন্য।",
+      "example": "I meet her at 5 PM. (আমি 5 টায় তার সাথে মিটিং করি। এখানে 'at' ব্যবহার করা হয়েছে কারণ সময় নির্দিষ্ট করা হয়েছে।)\nWe go to school on Mondays. (আমরা সোমবারে স্কুলে যাই। এখানে 'on' ব্যবহার করা হয়েছে কারণ দিন নির্দিষ্ট করা হয়েছে।)",
+      "practice": "নিচের বাক্যগুলোতে সঠিক সময়ের জন্য 'at', 'on', 'in' ব্যবহার করুন: সকাল 8টায়, শনিবারে, জুন মাসে, রাত 12টায়।"
     },
     {
       "id": 4,
       "topic": "Articles & Prepositions",
-      "subtopic": "Prepositions of Time",
-      "rule": "Use 'at' for specific times, 'on' for days and dates, and 'in' for months, years, and parts of the day.",
-      "example": "She was born on 5th June 2000.",
-      "practice": "Complete the sentences with the correct preposition: I was born ___ 1999."
+      "subtopic": "Prepositions of Place",
+      "rule": "যখন কোনো জায়গা বা স্থান সম্পর্কে কথা বলা হয় তখন 'in', 'on', 'at' এগুলো ব্যবহার করা হয়। 'in' হবে ভিতরে থাকা জায়গার জন্য, 'on' হবে উপরে থাকা জায়গার জন্য, 'at' হবে কোনো নির্দিষ্ট জায়গার জন্য।",
+      "example": "The book is on the table. (বইটি টেবিলের উপর আছে। এখানে 'on' ব্যবহার করা হয়েছে কারণ বইটি টেবিলের উপরে আছে।)\nShe is at the park. (তিনি পার্কে আছেন। এখানে 'at' ব্যবহার করা হয়েছে কারণ পার্ক হল নির্দিষ্ট জায়গা।)",
+      "practice": "নিচের বাক্যগুলোতে সঠিক স্থানের জন্য 'in', 'on', 'at' ব্যবহার করুন: টেবিলের উপর, ঘরে, স্কুলে, মেঝেতে।"
     },
     {
       "id": 5,
       "topic": "Articles & Prepositions",
-      "subtopic": "Prepositions of Place",
-      "rule": "Use 'in' for larger areas, 'on' for surfaces, and 'at' for specific points.",
-      "example": "The book is on the table.",
-      "practice": "Choose the correct preposition: The cat is ___ the mat."
-    },
-    {
-      "id": 6,
-      "topic": "Articles & Prepositions",
-      "subtopic": "Prepositions of Movement",
-      "rule": "Use 'to' for direction, 'from' for origin, and 'through' for movement within.",
-      "example": "She walked from the park to the station.",
-      "practice": "Complete the sentence: He drove ___ the highway."
-    },
-    {
-      "id": 7,
-      "topic": "Articles & Prepositions",
       "subtopic": "Common Prepositions",
-      "rule": "Some prepositions are used with specific verbs, nouns, or adjectives.",
-      "example": "She is interested in music.",
-      "practice": "Complete the phrase: He is good ___ sports."
-    },
-    {
-      "id": 8,
-      "topic": "Articles & Prepositions",
-      "subtopic": "Articles with Nationalities",
-      "rule": "Use 'the' before nationalities when referring to people from a country.",
-      "example": "The French are known for their cuisine.",
-      "practice": "Rewrite the sentence using the correct article: ___ Japanese are polite."
-    },
-    {
-      "id": 9,
-      "topic": "Articles & Prepositions",
-      "subtopic": "Articles with Institutions",
-      "rule": "Use 'the' before names of institutions like schools, hospitals, and universities.",
-      "example": "She works at the hospital.",
-      "practice": "Choose the correct article: I study at ___ university."
-    },
-    {
-      "id": 10,
-      "topic": "Articles & Prepositions",
-      "subtopic": "Prepositions with Adjectives",
-      "rule": "Some adjectives are always followed by specific prepositions.",
-      "example": "She is afraid of snakes.",
-      "practice": "Complete the sentence: He is tired ___ work."
+      "rule": "কিছু সাধারণ সংযোগকারী শব্দ রয়েছে যেগুলো সাধারণত কোনো বিষয় বা ব্যক্তির সাথে সম্পর্ক প্রকাশ করে। যেমন: 'with', 'without', 'about', 'between', 'among'।",
+      "example": "She is talking with her friend. (তিনি তার বন্ধুর সাথে কথা বলছেন। এখানে 'with' ব্যবহার করা হয়েছে কারণ কথা বলার সময় তিনি তার বন্ধুর সাথে রয়েছেন।)\nHe is interested in music. (তিনি সঙ্গীতে আগ্রহী। এখানে 'in' ব্যবহার করা হয়েছে কারণ আগ্রহ সঙ্গীতে।)",
+      "practice": "নিচের বাক্যগুলোতে সঠিক সংযোগকারী শব্দটি ব্যবহার করুন: কেউ নিজের সাথে কথা বলছে, তিনি সঙ্গীতে আগ্রহী, সে কিছু নিয়ে কথা বলছে।"
     }
   ]
 }
